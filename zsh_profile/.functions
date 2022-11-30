@@ -1,0 +1,26 @@
+prep-commit() {
+	git add .
+	pre-commit
+	git add .
+	pre-commit
+}
+
+
+rebase() {
+	if [ $# -eq 0 ]
+		then 
+			BRANCH="master"
+	else
+		BRANCH=$1
+	fi
+	git fetch origin $BRANCH && git rebase origin/$BRANCH
+}
+
+copy() {
+    cat $1 | pbcopy
+}
+
+
+go() {
+    cd ~/projects/$1
+}
