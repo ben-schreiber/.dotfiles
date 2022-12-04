@@ -15,6 +15,11 @@ brew_packages:
 brew_cask_packages:
 	brew install --cask iterm2 spotify whatsapp alt-tab font-fira-code
 
+oh-my-zsh:
+	curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh | sh -c
+	git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+	git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+	ln -s ~/.dotfiles/.zshrc ~/.zshrc
 
 vim:
 	vim_prequisites
@@ -27,12 +32,9 @@ vim_prequisites:
 vim_github:
 	# Install Direct Packages
 	mkdir -p ~/.vim/pack/plugins/start/ && cd ~/.vim/pack/plugins/start
-	mkdir ctrlp
-	git clone https://github.com/ctrlpvim/ctrlp.vim.git ./ctrlp
-	mkdir lightline
-	git clone https://github.com/itchyny/lightline.vim ./lightline
-	mkdir Jenkins-vim-syntax
-	git clone https://github.com/martinda/Jenkinsfile-vim-syntax.git ./Jenkinsfile-vim-syntax
+	git clone https://github.com/ctrlpvim/ctrlp.vim.git ctrlp
+	git clone https://github.com/itchyny/lightline.vim lightline
+	git clone https://github.com/martinda/Jenkinsfile-vim-syntax.git Jenkinsfile-vim-syntax
 	# Install COC
 	mkdir -p ~/.local/share/nvim/site/pack/coc/start
 	cd ~/.local/share/nvim/site/pack/coc/start
