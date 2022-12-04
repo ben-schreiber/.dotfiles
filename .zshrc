@@ -1,4 +1,4 @@
-for DOTFILE in `find /Users/Ben.schreiber/.dotfiles/zsh_profile`
+for DOTFILE in `find $HOME/.dotfiles/zsh_profile`
 do
     [ -f "$DOTFILE" ] && source "$DOTFILE"
 done
