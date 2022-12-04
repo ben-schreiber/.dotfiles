@@ -5,7 +5,7 @@ current_time() {
 
 PROMPT='$(current_time) %{$fg_bold[cyan]%}%2~%{$reset_color%} $(git_prompt_info)'
 PROMPT+=$'\n'
-PROMPT+="%(?:%{$fg_bold[green]%}> :%{$fg_bold[red]%}$ )%{$reset_color%}"
+PROMPT+="%{$fg_bold[cyan]%}❯%(?:%{$fg_bold[green]%}❯ :%{$fg_bold[red]%}❯ )%{$reset_color%}"
 #PROMPT+="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )%{$reset_color%}"
 #RPROMPT='$(current_time)'
 
