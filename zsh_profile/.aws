@@ -16,3 +16,11 @@ cp_old_to_new() {
 	aws s3 cp /tmp/transfer s3://$3/$1 --profile=Eng-Prod
 	rm -f /tmp/transfer
 }
+
+cp_old_to_dev() {
+	echo "s3://$2/$1"
+	aws s3 cp s3://$2/$1 /tmp/transfer --profile=default
+	echo "s3://$3/$1"
+	aws s3 cp /tmp/transfer s3://$3/$1 --profile=Eng-Dev
+	rm -f /tmp/transfer
+}
