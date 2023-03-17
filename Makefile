@@ -21,16 +21,17 @@ config_files:
 	ln -s ~/.dotfiles/config_files/git/.gitconfig ~/.gitconfig;
 	ln -s ~/.dotfiles/config_files/git/.gitignore_global ~/.gitignore_global;
 	ln -s ~/.dotfiles/config_files/kitty/kitty.conf ~/.config/kitty/kitty.conf;
+	ln -s ~/.dotfiles/config_files/vim/.vimrc ~/.vimrc;
 
 oh-my-zsh:
 	curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh | sh -c
 	git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 	git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-	ln -s ~/.dotfiles/.zshrc ~/.zshrc
 
 vim:
 	vim_prequisites
 	vim_github
+	vim_other
 
 vim_prequisites:
 	curl -sL install-node.now.sh | bash && curl --compressed -o- -L https://yarnpkg.com/install.sh | bash
@@ -47,3 +48,11 @@ vim_github:
 	cd ~/.local/share/nvim/site/pack/coc/start
 	git clone --branch release https://github.com/neoclide/coc.nvim.git --depth=1
 	nvim -c "helptags coc.nvim/doc/ | q"
+
+vim_other:
+	mkdir -p ~/.vim/colors
+	cd ~/.dotfiles/vim/colors
+	for COLOR in *
+	do
+		[ -f "$COLOR" ] && ln -s "$COLOR" ~/.vim/colors/"$COLOR"
+	done
