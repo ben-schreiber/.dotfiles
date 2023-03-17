@@ -20,11 +20,6 @@ copy() {
     cat $1 | pbcopy
 }
 
-
-go() {
-    cd ~/projects/$1
-}
-
 parse_git_branch() {
     git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p' | sed 's/\[//' | sed 's/\]$//'
 }
