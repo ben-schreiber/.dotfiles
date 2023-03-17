@@ -9,6 +9,7 @@ plugins=(
 	npm
 	zsh-autosuggestions
 	zsh-syntax-highlighting
+    wd
 )
 
 source $ZSH/oh-my-zsh.sh

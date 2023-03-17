@@ -13,7 +13,14 @@ brew_packages:
 	brew install pyenv pyenv-virtualenv git vim neovim jq node
 
 brew_cask_packages:
-	brew install --cask iterm2 spotify whatsapp alt-tab font-fira-code
+	brew install --cask iterm2 spotify whatsapp alt-tab font-fira-code kitty
+
+config_files:
+	ln -s ~/.dotfiles/config_files/zsh/.zshrc ~/.zshrc;
+	ln -s ~/.dotfiles/mytheme.zsh-theme ~/.oh-my-zsh/custom/themes/mytheme.zsh-theme;
+	ln -s ~/.dotfiles/config_files/git/.gitconfig ~/.gitconfig;
+	ln -s ~/.dotfiles/config_files/git/.gitignore_global ~/.gitignore_global;
+	ln -s ~/.dotfiles/config_files/kitty/kitty.conf ~/.config/kitty/kitty.conf;
 
 oh-my-zsh:
 	curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh | sh -c

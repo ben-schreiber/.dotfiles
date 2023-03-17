@@ -1,3 +1,4 @@
+
 prep-commit() {
 	git add .
 	pre-commit
@@ -5,9 +6,6 @@ prep-commit() {
 	pre-commit
 }
 
-set_branch() {
-    
-}
 rebase() {
     if [ $# -eq 0 ] 
     then 
@@ -35,14 +33,14 @@ merge() {
     CURR_BRANCH=$(parse_git_branch)
     if [ $# -eq 0 ] 
     then 
-        BRANCH="master"
+        BASE_BRANCH="master"
 	else
-		BRANCH=$1
+		BASE_BRANCH=$1
 	fi
-    echo "Merging branch '$CURR_BRANCH' into '$BRANCH'"
+    echo "Merging branch '$CURR_BRANCH' into '$BASE_BRANCH'"
     sleep 2
-    git checkout $BRANCH && \
-    git reset --hard origin/$BRANCH && \
+    git checkout $BASE_BRANCH && \
+    git reset --hard origin/$BASE_BRANCH && \
     git merge --ff-only $CURR_BRANCH && \
     git push
 }
