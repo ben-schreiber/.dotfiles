@@ -1,0 +1,65 @@
+{
+    "editor.fontSize": 16,
+    "editor.mouseWheelZoom": true,
+    "files.autoSave": "afterDelay",
+    "editor.cursorStyle": "line-thin",
+    "explorer.confirmDelete": false,
+    "files.exclude": {
+        ".python-version": true,
+        "**/__pycache__": true,
+        "**/.idea": true,
+        "**/.pytest_cache": true,
+        "**/.svn": false
+    },
+    "window.openFoldersInNewWindow": "on",
+    "gitlens.currentLine.format": "${author, }${agoOrDate}",
+    "gitlens.codeLens.scopes": [
+        "document"
+    ],
+    "gitlens.hovers.currentLine.over": "line",
+    "files.associations": {
+        "*.sql": "jinja-sql"
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python",
+        "editor.formatOnType": true
+    },
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "gitlens.codeLens.enabled": false,
+    "jupyter.askForKernelRestart": false,
+    "terminal.integrated.tabs.location": "left",
+    "explorer.confirmDragAndDrop": false,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "right"
+    },
+    "notebook.lineNumbers": "on",
+    "editor.bracketPairColorization.enabled": false,
+    "python.experiments.optInto": [
+    "All"
+    ],
+    "dbt.listModelsDisabled": true,
+    "dbt.runModelCommandAdditionalParams": [
+        "--profile=snowflake_piper_db"
+    ],
+    "gitHistory.hideCommitViewExplorer": true,
+    "gitblame.statusBarMessageFormat": "${author.name} (${time.ago})",
+    "sqlfluff.dialect": "snowflake",
+    "terminal.integrated.env.osx": {
+        "DBT_ENV": "sf_prod"
+    },
+    "redhat.telemetry.enabled": false,
+    "editor.fontLigatures": true,
+    "terminal.integrated.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontFamily": "JetBrains Mono",
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.useLibraryCodeForTypes": false,
+    "gitlens.hovers.enabled": false,
+    "editor.minimap.enabled": false,
+    "git.branchProtection": [
+        "master"
+    ],
+    "editor.lineNumbers": "relative",
+    "workbench.colorTheme": "Rosé Pine Moon",
+    "workbench.productIconTheme": "developer-icons"
+}

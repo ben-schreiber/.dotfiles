@@ -3,7 +3,7 @@ install_module() {
     ~/.dotfiles/$1/install.sh
 }
 
-declare -a modules=("brew" "git" "zsh" "kitty" "vim" "nvim")
+declare -a modules=("brew" "git" "zsh" "kitty" "vim" "nvim" "vscode")
 
 for module in "${modules[@]}"
 do
