@@ -61,5 +61,6 @@
     ],
     "editor.lineNumbers": "relative",
     "workbench.colorTheme": "Rosé Pine Moon",
-    "workbench.productIconTheme": "developer-icons"
+    "workbench.productIconTheme": "developer-icons",
+    "editor.tabCompletion": "on"
 }
