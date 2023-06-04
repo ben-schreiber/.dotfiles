@@ -17,11 +17,8 @@
         "document"
     ],
     "gitlens.hovers.currentLine.over": "line",
-    "files.associations": {
-        "*.sql": "jinja-sql"
-    },
     "[python]": {
-        "editor.defaultFormatter": "ms-python.python",
+        "editor.defaultFormatter": "ms-python.black-formatter",
         "editor.formatOnType": true
     },
     "terminal.integrated.defaultProfile.osx": "zsh",
@@ -36,11 +33,11 @@
     "notebook.lineNumbers": "on",
     "editor.bracketPairColorization.enabled": false,
     "python.experiments.optInto": [
-    "All"
+        "All"
     ],
     "dbt.listModelsDisabled": true,
     "dbt.runModelCommandAdditionalParams": [
-        "--profile=snowflake_piper_db"
+        "--profile=sf_prod"
     ],
     "gitHistory.hideCommitViewExplorer": true,
     "gitblame.statusBarMessageFormat": "${author.name} (${time.ago})",
@@ -60,7 +57,17 @@
         "master"
     ],
     "editor.lineNumbers": "relative",
-    "workbench.colorTheme": "Rosé Pine Moon",
+    "workbench.colorTheme": "Rosé Pine",
     "workbench.productIconTheme": "developer-icons",
-    "editor.tabCompletion": "on"
+    "editor.tabCompletion": "on",
+    "sqlfluff.executablePath": "/Users/Ben.schreiber/.pyenv/shims/sqlfluff",
+    "[jinja-sql]": {
+        "editor.defaultFormatter": "dorzey.vscode-sqlfluff"
+    },
+    "python.formatting.provider": "none",
+    "notebook.output.textLineLimit": 50,
+    "notebook.output.scrolling": true,
+    "black-formatter.args": [
+        "-l 120"
+    ]
 }

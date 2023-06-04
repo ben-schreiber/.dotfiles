@@ -1,11 +1,3 @@
-
-prep-commit() {
-	git add .
-	pre-commit
-	git add .
-	pre-commit
-}
-
 rebase() {
     if [ $# -eq 0 ] 
     then 
