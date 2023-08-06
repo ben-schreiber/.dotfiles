@@ -37,7 +37,7 @@
     ],
     "dbt.listModelsDisabled": true,
     "dbt.runModelCommandAdditionalParams": [
-        "--profile=sf_prod"
+        "--profile=sf_stage"
     ],
     "gitHistory.hideCommitViewExplorer": true,
     "gitblame.statusBarMessageFormat": "${author.name} (${time.ago})",
@@ -69,5 +69,7 @@
     "notebook.output.scrolling": true,
     "black-formatter.args": [
         "-l 120"
-    ]
+    ],
+    "C_Cpp.default.compilerPath": "/usr/bin/gcc",
+    "dbt.versionCheck": "neither"
 }

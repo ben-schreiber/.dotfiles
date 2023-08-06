@@ -4,4 +4,3 @@
 .vscode/
 scratch*
 send_to_lambda*
-.sqlfluff
