@@ -5,7 +5,16 @@ rebase() {
 	else
 		BRANCH=$1
 	fi 
-	git fetch origin $BRANCH && git rebase origin/$BRANCH
+    CURR_BRANCH=$(parse_git_branch)
+    echo "Rebasing branch '$CURR_BRANCH' on '$BRANCH'"
+    sleep 2
+	git fetch origin $BRANCH && \
+    git rebase origin/$BRANCH
+}
+
+rgf() {
+    rebase "$@" && \
+    git push -f
 }
 
 copy() {
@@ -13,7 +22,7 @@ copy() {
 }
 
 parse_git_branch() {
-    git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p' | sed 's/\[//' | sed 's/\]$//'
+    git branch --show-current
 }
 
 merge() {
@@ -27,6 +36,7 @@ merge() {
     echo "Merging branch '$CURR_BRANCH' into '$BASE_BRANCH'"
     sleep 2
     git checkout $BASE_BRANCH && \
+    git fetch origin $BASE_BRANCH && \
     git reset --hard origin/$BASE_BRANCH && \
     git merge --ff-only $CURR_BRANCH && \
     git push

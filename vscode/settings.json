@@ -9,7 +9,11 @@
         "**/__pycache__": true,
         "**/.idea": true,
         "**/.pytest_cache": true,
-        "**/.svn": false
+        "**/.python-version": true,
+        "**/.svn": false,
+        "**/derby.log": true,
+        "**/metastore_db": true,
+        "**/spark-warehouse": true
     },
     "window.openFoldersInNewWindow": "on",
     "gitlens.currentLine.format": "${author, }${agoOrDate}",
@@ -57,7 +61,7 @@
         "master"
     ],
     "editor.lineNumbers": "relative",
-    "workbench.colorTheme": "Rosé Pine",
+    "workbench.colorTheme": "Tomorrow Night Blue",
     "workbench.productIconTheme": "developer-icons",
     "editor.tabCompletion": "on",
     "sqlfluff.executablePath": "/Users/Ben.schreiber/.pyenv/shims/sqlfluff",
@@ -71,5 +75,10 @@
         "-l 120"
     ],
     "C_Cpp.default.compilerPath": "/usr/bin/gcc",
-    "dbt.versionCheck": "neither"
+    "dbt.versionCheck": "neither",
+    "githubPullRequests.terminalLinksHandler": "github",
+    "githubPullRequests.defaultCreateOption": "create",
+    "githubPullRequests.defaultMergeMethod": "rebase",
+    "githubPullRequests.fileListLayout": "flat",
+    "githubPullRequests.pullBranch": "never"
 }
