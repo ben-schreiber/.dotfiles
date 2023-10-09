@@ -1,84 +1,89 @@
 {
-    "editor.fontSize": 16,
-    "editor.mouseWheelZoom": true,
-    "files.autoSave": "afterDelay",
-    "editor.cursorStyle": "line-thin",
-    "explorer.confirmDelete": false,
-    "files.exclude": {
-        ".python-version": true,
-        "**/__pycache__": true,
-        "**/.idea": true,
-        "**/.pytest_cache": true,
-        "**/.python-version": true,
-        "**/.svn": false,
-        "**/derby.log": true,
-        "**/metastore_db": true,
-        "**/spark-warehouse": true
-    },
-    "window.openFoldersInNewWindow": "on",
-    "gitlens.currentLine.format": "${author, }${agoOrDate}",
-    "gitlens.codeLens.scopes": [
-        "document"
-    ],
-    "gitlens.hovers.currentLine.over": "line",
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter",
-        "editor.formatOnType": true
-    },
-    "terminal.integrated.defaultProfile.osx": "zsh",
-    "gitlens.codeLens.enabled": false,
-    "jupyter.askForKernelRestart": false,
-    "terminal.integrated.tabs.location": "left",
-    "explorer.confirmDragAndDrop": false,
-    "notebook.cellToolbarLocation": {
-        "default": "right",
-        "jupyter-notebook": "right"
-    },
-    "notebook.lineNumbers": "on",
-    "editor.bracketPairColorization.enabled": false,
-    "python.experiments.optInto": [
-        "All"
-    ],
-    "dbt.listModelsDisabled": true,
-    "dbt.runModelCommandAdditionalParams": [
-        "--profile=sf_stage"
-    ],
-    "gitHistory.hideCommitViewExplorer": true,
-    "gitblame.statusBarMessageFormat": "${author.name} (${time.ago})",
-    "sqlfluff.dialect": "snowflake",
-    "terminal.integrated.env.osx": {
-        "DBT_ENV": "sf_prod"
-    },
-    "redhat.telemetry.enabled": false,
-    "editor.fontLigatures": true,
-    "terminal.integrated.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
-    "editor.fontFamily": "JetBrains Mono",
-    "python.analysis.autoImportCompletions": true,
-    "python.analysis.useLibraryCodeForTypes": false,
-    "gitlens.hovers.enabled": false,
-    "editor.minimap.enabled": false,
-    "git.branchProtection": [
-        "master"
-    ],
-    "editor.lineNumbers": "relative",
-    "workbench.colorTheme": "Tomorrow Night Blue",
-    "workbench.productIconTheme": "developer-icons",
-    "editor.tabCompletion": "on",
-    "sqlfluff.executablePath": "/Users/Ben.schreiber/.pyenv/shims/sqlfluff",
-    "[jinja-sql]": {
-        "editor.defaultFormatter": "dorzey.vscode-sqlfluff"
-    },
-    "python.formatting.provider": "none",
-    "notebook.output.textLineLimit": 50,
-    "notebook.output.scrolling": true,
-    "black-formatter.args": [
-        "-l 120"
-    ],
-    "C_Cpp.default.compilerPath": "/usr/bin/gcc",
-    "dbt.versionCheck": "neither",
-    "githubPullRequests.terminalLinksHandler": "github",
-    "githubPullRequests.defaultCreateOption": "create",
-    "githubPullRequests.defaultMergeMethod": "rebase",
-    "githubPullRequests.fileListLayout": "flat",
-    "githubPullRequests.pullBranch": "never"
+  "C_Cpp.default.compilerPath": "/usr/bin/gcc",
+  "[jinja-sql]": {
+    "editor.defaultFormatter": "dorzey.vscode-sqlfluff"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnType": true
+  },
+  "black-formatter.args": [
+    "-l 120"
+  ],
+  "dbt.listModelsDisabled": true,
+  "dbt.runModelCommandAdditionalParams": [
+    "--profile=sf_stage"
+  ],
+  "dbt.versionCheck": "neither",
+  "editor.accessibilitySupport": "off",
+  "editor.bracketPairColorization.enabled": false,
+  "editor.cursorStyle": "line-thin",
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 16,
+  "editor.lineNumbers": "relative",
+  "editor.minimap.enabled": false,
+  "editor.mouseWheelZoom": true,
+  "editor.tabCompletion": "on",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "files.associations": {
+    "*.sql": "jinja-sql"
+  },
+  "files.autoSave": "afterDelay",
+  "files.exclude": {
+    "**/.idea": true,
+    "**/.pytest_cache": true,
+    "**/.python-version": true,
+    "**/.svn": false,
+    "**/__pycache__": true,
+    "**/derby.log": true,
+    "**/metastore_db": true,
+    "**/spark-warehouse": true,
+    ".python-version": true
+  },
+  "git.branchProtection": [
+    "master"
+  ],
+  "gitHistory.hideCommitViewExplorer": true,
+  "gitblame.statusBarMessageFormat": "${author.name} (${time.ago})",
+  "githubPullRequests.defaultCreateOption": "create",
+  "githubPullRequests.defaultMergeMethod": "rebase",
+  "githubPullRequests.fileListLayout": "flat",
+  "githubPullRequests.pullBranch": "never",
+  "githubPullRequests.terminalLinksHandler": "github",
+  "gitlens.codeLens.enabled": false,
+  "gitlens.codeLens.scopes": [
+    "document"
+  ],
+  "gitlens.currentLine.format": "${author, }${agoOrDate}",
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.hovers.enabled": false,
+  "jupyter.askForKernelRestart": false,
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "right"
+  },
+  "notebook.lineNumbers": "on",
+  "notebook.output.scrolling": true,
+  "notebook.output.textLineLimit": 50,
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.useLibraryCodeForTypes": false,
+  "python.experiments.optInto": [
+    "All"
+  ],
+  "python.formatting.provider": "none",
+  "redhat.telemetry.enabled": false,
+  "sqlfluff.dialect": "snowflake",
+  "sqlfluff.executablePath": "/Users/Ben.schreiber/.pyenv/shims/sqlfluff",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.env.osx": {
+    "DBT_ENV": "sf_prod",
+    "FIG_NEW_SESSION": "1"
+  },
+  "terminal.integrated.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+  "terminal.integrated.tabs.location": "left",
+  "window.openFoldersInNewWindow": "on",
+  "workbench.colorTheme": "Tomorrow Night Blue",
+  "workbench.productIconTheme": "developer-icons"
 }

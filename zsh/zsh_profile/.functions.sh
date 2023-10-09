@@ -7,7 +7,7 @@ rebase() {
 	fi 
     CURR_BRANCH=$(parse_git_branch)
     echo "Rebasing branch '$CURR_BRANCH' on '$BRANCH'"
-    sleep 2
+    sleep 1
 	git fetch origin $BRANCH && \
     git rebase origin/$BRANCH
 }
