@@ -4,3 +4,6 @@
 .vscode/
 scratch*
 send_to_lambda*
+metastore_db/
+derby.log
+pyrightconfig.json

@@ -3,6 +3,7 @@ dberezin.lox-language
 eamodio.find-related
 eamodio.gitlens
 eserozvataf.one-dark-pro-monokai-darker
+GitHub.github-vscode-theme
 github.vscode-github-actions
 GitHub.vscode-pull-request-github
 inferrinizzard.prettier-sql-vscode
@@ -12,6 +13,8 @@ mechatroner.rainbow-csv
 ms-azuretools.vscode-docker
 ms-python.black-formatter
 ms-python.isort
+ms-python.mypy-type-checker
+ms-python.pylint
 ms-python.python
 ms-python.vscode-pylance
 ms-toolsai.jupyter

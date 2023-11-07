@@ -49,7 +49,7 @@
   "gitblame.statusBarMessageFormat": "${author.name} (${time.ago})",
   "githubPullRequests.defaultCreateOption": "create",
   "githubPullRequests.defaultMergeMethod": "rebase",
-  "githubPullRequests.fileListLayout": "flat",
+  "githubPullRequests.fileListLayout": "tree",
   "githubPullRequests.pullBranch": "never",
   "githubPullRequests.terminalLinksHandler": "github",
   "gitlens.codeLens.enabled": false,
@@ -80,10 +80,21 @@
   "terminal.integrated.env.osx": {
     "DBT_ENV": "sf_prod",
     "FIG_NEW_SESSION": "1"
-  },
+},
   "terminal.integrated.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
   "terminal.integrated.tabs.location": "left",
-  "window.openFoldersInNewWindow": "on",
-  "workbench.colorTheme": "Tomorrow Night Blue",
-  "workbench.productIconTheme": "developer-icons"
+"window.openFoldersInNewWindow": "on",
+  "workbench.productIconTheme": "developer-icons",
+  "git.confirmSync": false,
+  "editor.detectIndentation": false,
+  "python.autoComplete.extraPaths": [
+   "/Users/Ben.schreiber/Desktop/crafting-interpreters/plox" 
+],
+"python.analysis.extraPaths": [
+    "/Users/Ben.schreiber/Desktop/crafting-interpreters/plox"
+],
+"mypy-type-checker.importStrategy": "fromEnvironment",
+"workbench.colorTheme": "GitHub Dark Default",
+"isort.check": true,
+"isort.showNotifications": "onWarning"
 }

@@ -1,17 +1,42 @@
 current_time() {
-   echo "%{$fg_bold[yellow]%}|%*|%{$reset_color%}"
+   echo "%{$fg_bold[green]%}|%*|%{$reset_color%}"
 }
 
-function virtualenv_info { 
-    [ $VIRTUAL_ENV ] && echo '('`basename $VIRTUAL_ENV`') '
+#function virtualenv_info { 
+#    [ $VIRTUAL_ENV ] && echo '('`basename $VIRTUAL_ENV`') '
+#}
+
+function working_dir() {
+    git_repo=""
+    if git rev-parse --is-inside-work-tree &> /dev/null; then
+        top_level=$(git rev-parse --show-toplevel 2> /dev/null)
+        git_repo=${top_level##*/}       # remove everything before the last / that still remains
+        git_repo="$git_repo.."
+    fi
+    if [ "$HOME" = "$PWD" ]; then
+        curr_dir="~"
+    else
+        curr_dir=${PWD##*/}
+        curr_dir=${curr_dir:-/} 
+    fi
+    echo "%{$fg_bold[cyan]%}$git_repo$curr_dir%{$reset_color%}"
 }
 
-PROMPT='$(current_time) %{$fg_bold[cyan]%}%2~%{$reset_color%} $(git_prompt_info)'
+function current_branch() {
+    #branch_name=$(git branch --show-current 2> /dev/null | tr -d '\n')
+    branch_name=$(git rev-parse --abbrev-ref --symbolic-full-name HEAD 2> /dev/null | tr -d '\n')
+    if [ "$branch_name" = "HEAD" ]; then
+        tag_name=$(git tag --points-at HEAD 2> /dev/null | tr -d '\n')
+        if [ "$tag_name" != "" ]; then 
+            branch_name=$tag_name
+        fi
+    fi
+    if git rev-parse --is-inside-work-tree &> /dev/null; then
+         echo "%{$fg_bold[green]%}->%{$reset_color%} %{$fg_bold[red]%}$branch_name%{$reset_color%}"
+    fi
+}
+
+PROMPT='$(working_dir) $(current_branch)'
 PROMPT+=$'\n'
-PROMPT+="%(?:%{$fg_bold[blue]%}❯%{$fg_bold[cyan]%}❯%{$fg_bold[green]%}❯ :%{$fg_bold[yellow]%}❯%{$fg_bold[174]%}❯%{$fg_bold[red]%}❯ )%{$reset_color%}"
+PROMPT+="%(?:%{$fg_bold[blue]%}❯ :%{$fg_bold[red]%}❯ )%{$reset_color%}"
 
-
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}git:(%{$fg[red]%}"
-ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} "
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%})"
-ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
