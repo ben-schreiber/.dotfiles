@@ -93,7 +93,6 @@
 "python.analysis.extraPaths": [
     "/Users/Ben.schreiber/Desktop/crafting-interpreters/plox"
 ],
-"mypy-type-checker.importStrategy": "fromEnvironment",
 "workbench.colorTheme": "GitHub Dark Default",
 "isort.check": true,
 "isort.showNotifications": "onWarning"
