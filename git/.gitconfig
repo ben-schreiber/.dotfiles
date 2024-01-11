@@ -10,3 +10,7 @@
 	rebase = true
 [core]
 	excludesfile = ~/.gitignore_global
+[push]
+  autoSetupRemote = true
+[blame]
+  ignoreRevsFile = .git-blame-ignore-revs

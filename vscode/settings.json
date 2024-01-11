@@ -81,19 +81,18 @@
     "DBT_ENV": "sf_prod",
     "FIG_NEW_SESSION": "1"
 },
-  "terminal.integrated.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
-  "terminal.integrated.tabs.location": "left",
+"terminal.integrated.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
 "window.openFoldersInNewWindow": "on",
   "workbench.productIconTheme": "developer-icons",
   "git.confirmSync": false,
-  "editor.detectIndentation": false,
-  "python.autoComplete.extraPaths": [
-   "/Users/Ben.schreiber/Desktop/crafting-interpreters/plox" 
-],
-"python.analysis.extraPaths": [
-    "/Users/Ben.schreiber/Desktop/crafting-interpreters/plox"
-],
-"workbench.colorTheme": "GitHub Dark Default",
+"editor.detectIndentation": false,
 "isort.check": true,
-"isort.showNotifications": "onWarning"
+"isort.showNotifications": "onWarning",
+"gitlens.advanced.messages": {
+    "suppressBlameInvalidIgnoreRevsFileWarning": true
+},
+"dbt.enableNewLineagePanel": true,
+"mypy-type-checker.importStrategy": "fromEnvironment",
+"mypy-type-checker.preferDaemon": true,
+"terminal.integrated.tabs.location": "left"
 }
