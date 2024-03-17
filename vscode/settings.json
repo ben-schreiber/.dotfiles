@@ -43,16 +43,16 @@
     ".python-version": true
   },
   "git.branchProtection": [
-    "master"
-  ],
+    "master",
+    "staging"
+],
   "gitHistory.hideCommitViewExplorer": true,
   "gitblame.statusBarMessageFormat": "${author.name} (${time.ago})",
   "githubPullRequests.defaultCreateOption": "create",
   "githubPullRequests.defaultMergeMethod": "rebase",
   "githubPullRequests.fileListLayout": "tree",
   "githubPullRequests.pullBranch": "never",
-  "githubPullRequests.terminalLinksHandler": "github",
-  "gitlens.codeLens.enabled": false,
+"githubPullRequests.terminalLinksHandler": "github",
   "gitlens.codeLens.scopes": [
     "document"
   ],
@@ -94,5 +94,15 @@
 "dbt.enableNewLineagePanel": true,
 "mypy-type-checker.importStrategy": "fromEnvironment",
 "mypy-type-checker.preferDaemon": true,
-"terminal.integrated.tabs.location": "left"
+"terminal.integrated.tabs.location": "left",
+"editor.cursorSmoothCaretAnimation": "on",
+"editor.cursorSurroundingLines": 2,
+"git.rebaseWhenSync": true,
+"gitlens.plusFeatures.enabled": false,
+"gitlens.virtualRepositories.enabled": false,
+"gitlens.outputLevel": "error",
+"gitblame.inlineMessageEnabled": true,
+"terminal.explorerKind": "external",
+"terminal.external.osxExec": "iTerm.app",
+"workbench.startupEditor": "none"
 }

@@ -3,7 +3,7 @@ export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="mytheme"
 
-source ~/.dotfiles/zsh/zsh-highlighting-themes/themes/catppuccin_macchiato-zsh-syntax-highlighting.zsh
+source "$HOME/.dotfiles/zsh/zsh-highlighting-themes/themes/catppuccin_macchiato-zsh-syntax-highlighting.zsh"
 plugins=(
 	git
 	npm
@@ -14,7 +14,7 @@ plugins=(
     vi-mode
 )
 
-source $ZSH/oh-my-zsh.sh
+source "$ZSH/oh-my-zsh.sh"
 
 # toad_runner_programs=("dbtoad" "ingestoad" "monitoad" "deletoad" "generitoad")
 # for prog in ${toad_runner_programs[@]}; do
