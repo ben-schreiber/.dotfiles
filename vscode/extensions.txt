@@ -1,7 +1,9 @@
+amazonwebservices.codewhisperer-for-command-line-companion
 bierner.docs-view
 boto3typed.boto3-ide
 dberezin.lox-language
 eamodio.find-related
+eamodio.gitlens
 eserozvataf.one-dark-pro-monokai-darker
 foxundermoon.shell-format
 github.github-vscode-theme
@@ -38,4 +40,3 @@ snowflake.snowflake-vsc
 tamasfe.even-better-toml
 timonwong.shellcheck
 vscodevim.vim
-waderyan.gitblame

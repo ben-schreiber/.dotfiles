@@ -10,6 +10,7 @@
   "black-formatter.args": [
     "-l 120"
   ],
+  "dbt.enableNewLineagePanel": true,
   "dbt.listModelsDisabled": true,
   "dbt.runModelCommandAdditionalParams": [
     "--profile=sf_stage"
@@ -17,7 +18,10 @@
   "dbt.versionCheck": "neither",
   "editor.accessibilitySupport": "off",
   "editor.bracketPairColorization.enabled": false,
+  "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorStyle": "line-thin",
+  "editor.cursorSurroundingLines": 2,
+  "editor.detectIndentation": false,
   "editor.fontFamily": "JetBrains Mono",
   "editor.fontLigatures": true,
   "editor.fontSize": 16,
@@ -45,21 +49,31 @@
   "git.branchProtection": [
     "master",
     "staging"
-],
+  ],
+  "git.confirmSync": false,
+  "git.rebaseWhenSync": true,
   "gitHistory.hideCommitViewExplorer": true,
+  "gitblame.inlineMessageEnabled": true,
   "gitblame.statusBarMessageFormat": "${author.name} (${time.ago})",
   "githubPullRequests.defaultCreateOption": "create",
   "githubPullRequests.defaultMergeMethod": "rebase",
   "githubPullRequests.fileListLayout": "tree",
   "githubPullRequests.pullBranch": "never",
-"githubPullRequests.terminalLinksHandler": "github",
-  "gitlens.codeLens.scopes": [
-    "document"
-  ],
+  "githubPullRequests.terminalLinksHandler": "github",
+  "gitlens.advanced.messages": {
+    "suppressBlameInvalidIgnoreRevsFileWarning": true
+  },
   "gitlens.currentLine.format": "${author, }${agoOrDate}",
   "gitlens.hovers.currentLine.over": "line",
   "gitlens.hovers.enabled": false,
+  "gitlens.outputLevel": "info",
+  "gitlens.plusFeatures.enabled": false,
+  "gitlens.virtualRepositories.enabled": false,
+  "isort.check": true,
+  "isort.showNotifications": "onWarning",
   "jupyter.askForKernelRestart": false,
+  "mypy-type-checker.importStrategy": "fromEnvironment",
+  "mypy-type-checker.preferDaemon": true,
   "notebook.cellToolbarLocation": {
     "default": "right",
     "jupyter-notebook": "right"
@@ -76,33 +90,16 @@
   "redhat.telemetry.enabled": false,
   "sqlfluff.dialect": "snowflake",
   "sqlfluff.executablePath": "/Users/Ben.schreiber/.pyenv/shims/sqlfluff",
+  "terminal.explorerKind": "external",
+  "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.defaultProfile.osx": "zsh",
   "terminal.integrated.env.osx": {
     "DBT_ENV": "sf_prod",
-    "FIG_NEW_SESSION": "1"
+    "CW_NEW_SESSION": "1"
 },
-"terminal.integrated.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
-"window.openFoldersInNewWindow": "on",
+  "terminal.integrated.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+  "terminal.integrated.tabs.location": "left",
+  "window.openFoldersInNewWindow": "on",
   "workbench.productIconTheme": "developer-icons",
-  "git.confirmSync": false,
-"editor.detectIndentation": false,
-"isort.check": true,
-"isort.showNotifications": "onWarning",
-"gitlens.advanced.messages": {
-    "suppressBlameInvalidIgnoreRevsFileWarning": true
-},
-"dbt.enableNewLineagePanel": true,
-"mypy-type-checker.importStrategy": "fromEnvironment",
-"mypy-type-checker.preferDaemon": true,
-"terminal.integrated.tabs.location": "left",
-"editor.cursorSmoothCaretAnimation": "on",
-"editor.cursorSurroundingLines": 2,
-"git.rebaseWhenSync": true,
-"gitlens.plusFeatures.enabled": false,
-"gitlens.virtualRepositories.enabled": false,
-"gitlens.outputLevel": "error",
-"gitblame.inlineMessageEnabled": true,
-"terminal.explorerKind": "external",
-"terminal.external.osxExec": "iTerm.app",
-"workbench.startupEditor": "none"
+  "workbench.startupEditor": "none"
 }
