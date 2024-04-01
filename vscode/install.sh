@@ -10,13 +10,12 @@ echo "Installing vscode extensions"
 desired_extensions=$(cat ~/.dotfiles/vscode/extensions.txt)
 installed_extensions=$(code --list-extensions)
 missing_extensions=$(echo ${desired_extensions[@]} ${installed_extensions[@]} | tr ' ' '\n' | sort | uniq -u)
-
+echo $missing_extensions
 if [ -z "${missing_extensions}" ]
 then
     echo "All extensions are already installed"
 else
-    echo $missing_extensions | while read extension 
-    do
+    for extension in $missing_extensions; do
         code --install-extension $extension
     done
 fi

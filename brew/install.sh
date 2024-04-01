@@ -1,7 +1,10 @@
 # Install brew
 sudo true;
-curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | bash;
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> $HOME/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Install packages
-brew install jq
-brew install --cask spotify whatsapp alt-tab font-fira-code font-jetbrains-mono
+brew install jq font-hack-nerd-font
+brew install --cask spotify whatsapp alt-tab time-out
+brew tap homebrew/cask-fonts

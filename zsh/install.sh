@@ -1,8 +1,8 @@
 # Install oh-my-zsh
-curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh | sh -c
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Install plugins
-PLUGINS=$HOME/oh-my-zsh/custom/plugins
+PLUGINS=$HOME/.oh-my-zsh/custom/plugins
 mkdir -p $PLUGINS || true
 rm -rf $PLUGINS/zsh-autosuggestions/
 git clone https://github.com/zsh-users/zsh-autosuggestions --depth=1 $PLUGINS/zsh-autosuggestions
