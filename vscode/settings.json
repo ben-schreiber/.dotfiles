@@ -101,5 +101,9 @@
   "terminal.integrated.tabs.location": "left",
   "window.openFoldersInNewWindow": "on",
   "workbench.productIconTheme": "developer-icons",
-  "workbench.startupEditor": "none"
+"workbench.startupEditor": "none",
+"workbench.colorTheme": "Mariana Pro (Cool)",
+"vim.enableNeovim": true,
+"window.commandCenter": false,
+"notebook.diff.overviewRuler": true
 }
