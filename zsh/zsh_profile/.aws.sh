@@ -5,12 +5,6 @@ alias mv3='aws s3 mv'
 alias mb3='aws s3 mb'
 alias rb3='aws s3 rb'
 
-aws_sso() {
-    $HOME/pagaya/internal-tools/control_tower_sso/arm_control_tower_sso/control_tower_sso "$@"
-}
-export ENV=prod
-export AWS_PROFILE=Eng-Prod
-
 cat3() {
 	aws s3 cp "$1" -
 }
