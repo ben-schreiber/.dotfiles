@@ -3,7 +3,7 @@ parse_git_branch() {
 }
 
 get_default_branch() {
-    git rev-parse --abbrev-ref origin/HEAD | cut -c8- | tr -d '\n'
+    git remote show origin | grep "HEAD branch: " | cut -c16- | tr -d '\n'
 }
 
 rebase() {
@@ -23,10 +23,6 @@ rebase() {
 rgf() {
     rebase "$@" && \
     git push -f
-}
-
-copy() {
-    cat "$1" | pbcopy
 }
 
 merge() {
