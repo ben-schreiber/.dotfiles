@@ -1,8 +1,4 @@
 {
-    "C_Cpp.default.compilerPath": "/usr/bin/gcc",
-    "[jinja-sql]": {
-        "editor.defaultFormatter": "dorzey.vscode-sqlfluff"
-    },
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter",
         "editor.formatOnType": true
@@ -12,10 +8,7 @@
     "editor.cursorStyle": "line-thin",
     "editor.cursorSurroundingLines": 2,
     "editor.detectIndentation": false,
-    "editor.fontFamily": "Hasklig",
-    "editor.fontLigatures": true,
     "editor.fontSize": 14,
-    "editor.lineNumbers": "relative",
     "editor.minimap.enabled": false,
     "editor.mouseWheelZoom": true,
     "editor.tabCompletion": "on",
@@ -35,14 +28,6 @@
     "git.branchProtection": ["master", "staging"],
     "git.confirmSync": false,
     "git.rebaseWhenSync": true,
-    "gitHistory.hideCommitViewExplorer": true,
-    "gitblame.inlineMessageEnabled": true,
-    "gitblame.statusBarMessageFormat": "${author.name} (${time.ago})",
-    "githubPullRequests.defaultCreateOption": "create",
-    "githubPullRequests.defaultMergeMethod": "rebase",
-    "githubPullRequests.fileListLayout": "tree",
-    "githubPullRequests.pullBranch": "never",
-    "githubPullRequests.terminalLinksHandler": "github",
     "gitlens.advanced.messages": {
         "suppressBlameInvalidIgnoreRevsFileWarning": true
     },
@@ -52,9 +37,6 @@
     "gitlens.outputLevel": "info",
     "gitlens.plusFeatures.enabled": false,
     "gitlens.virtualRepositories.enabled": false,
-    "isort.check": true,
-    "isort.showNotifications": "onWarning",
-    "jupyter.askForKernelRestart": false,
     "mypy-type-checker.importStrategy": "fromEnvironment",
     "mypy-type-checker.preferDaemon": true,
     "notebook.cellToolbarLocation": {
@@ -67,7 +49,6 @@
     "python.analysis.autoImportCompletions": true,
     "python.analysis.useLibraryCodeForTypes": false,
     "python.experiments.optInto": ["All"],
-    "python.formatting.provider": "none",
     "redhat.telemetry.enabled": false,
     "terminal.explorerKind": "external",
     "terminal.external.osxExec": "iTerm.app",
@@ -90,10 +71,27 @@
     "search.exclude": {
         "**/target": true
     },
-    "workbench.colorTheme": "Dracula Theme",
     "files.autoSaveDelay": 2000,
     "rust-analyzer.testExplorer": true,
     "rust-analyzer.cargo.features": "all",
     "rust-analyzer.check.features": "all",
-    "task.allowAutomaticTasks": "on"
+    "task.allowAutomaticTasks": "on",
+    "workbench.colorTheme": "Dracula Theme",
+    "[yaml]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.fontFamily": "Jetbrains mono",
+    "chat.commandCenter.enabled": false,
+    "rust-analyzer.showSyntaxTree": false,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["<Option>", "r"],
+            "commands": ["File: Open Recent..."]
+        }
+    ],
+    "lldb.suppressUpdateNotifications": true,
+    "rust-analyzer.hover.documentation.keywords.enable": false,
+    "rust-analyzer.cachePriming.enable": false,
+    "editor.hover.delay": 1000,
+    "docker.extension.enableComposeLanguageServer": false
 }

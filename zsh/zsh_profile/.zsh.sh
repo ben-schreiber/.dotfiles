@@ -10,7 +10,6 @@ plugins=(
 	zsh-autosuggestions
 	zsh-syntax-highlighting
     wd
-    web-search
 )
 
 source "$ZSH/oh-my-zsh.sh"

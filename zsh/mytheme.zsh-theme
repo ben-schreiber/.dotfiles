@@ -22,7 +22,7 @@ function working_dir() {
     echo "%{$fg_bold[cyan]%}$git_repo$curr_dir%{$reset_color%}"
 }
 
-function current_branch() {
+function get_current_branch() {
     #branch_name=$(git branch --show-current 2> /dev/null | tr -d '\n')
     branch_name=$(git rev-parse --abbrev-ref --symbolic-full-name HEAD 2> /dev/null | tr -d '\n')
     if [ "$branch_name" = "HEAD" ]; then
@@ -36,7 +36,7 @@ function current_branch() {
     fi
 }
 
-PROMPT='$(working_dir) $(current_branch)'
+PROMPT='$(working_dir) $(get_current_branch)'
 PROMPT+=$'\n'
 PROMPT+="%(?:%{$fg_bold[blue]%}❯ :%{$fg_bold[red]%}❯ )%{$reset_color%}"
 
