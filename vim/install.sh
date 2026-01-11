@@ -9,7 +9,7 @@ mkdir -p ~/.vim/colors
 cd ~/.dotfiles/vim/colors
 for COLOR in *
 do
-    [ -f "$COLOR" ] && ln -fs ~/.dotfiles/vim/colors/"$COLOR" ~/.vim/colors/"$COLOR"
+    [ -f "${COLOR}" ] && ln -fs ~/.dotfiles/vim/colors/"${COLOR}" ~/.vim/colors/"${COLOR}"
 done
 
 # Install direct packages
