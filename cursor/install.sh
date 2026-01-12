@@ -1,7 +1,7 @@
 brew install --cask cursor 
 
-ln -sf "${HOME}/.dotfiles/cursor/settings.json" "${HOME}/Library/Application\ Support/Cursor/User/settings.json"
-ln -sf "${HOME}/.dotfiles/cursor/keybindings.json" "${HOME}/Library/Application\ Support/Cursor/User/keybindings.json"
+ln -sf "${HOME}/.dotfiles/cursor/settings.json" "${HOME}/Library/Application Support/Cursor/User/settings.json"
+ln -sf "${HOME}/.dotfiles/cursor/keybindings.json" "${HOME}/Library/Application Support/Cursor/User/keybindings.json"
 
 cp "${HOME}/.dotfiles/cursor/save_cursor_extensions.sh" "${HOME}/.dotfiles/.git/hooks/pre-commit"
 chmod +x "${HOME}/.dotfiles/.git/hooks/pre-commit"

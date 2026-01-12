@@ -2,5 +2,5 @@
 brew install git
 
 # Install global files
-ln -sf ~/.dotfiles/git/.gitignore_global ~/.gitignore_global
-ln -sf ~/.dotfiles/git/.gitconfig ~/.gitconfig
+ln -sf "${HOME}/.dotfiles/git/.gitignore_global" "${HOME}/.gitignore_global"
+ln -sf "${HOME}/.dotfiles/git/.gitconfig" "${HOME}/.gitconfig"

@@ -1,7 +1,7 @@
 brew install --cask visual-studio-code 
 
-ln -sf "${HOME}/.dotfiles/vscode/settings.json" "${HOME}/Library/Application\ Support/Code/User/settings.json"
-ln -sf "${HOME}/.dotfiles/vscode/keybindings.json" "${HOME}/Library/Application\ Support/Code/User/keybindings.json"
+ln -sf "${HOME}/.dotfiles/vscode/settings.json" "${HOME}/Library/Application Support/Code/User/settings.json"
+ln -sf "${HOME}/.dotfiles/vscode/keybindings.json" "${HOME}/Library/Application Support/Code/User/keybindings.json"
 
 cp "${HOME}/.dotfiles/vscode/save_vscode_extensions.sh" "${HOME}/.dotfiles/.git/hooks/pre-commit"
 chmod +x "${HOME}/.dotfiles/.git/hooks/pre-commit"
